@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+@import "@picocss/pico/scss/pico";
+
+:root {
+    --px: 2rem;
+    --py: 1rem;
+    --font-family: 'Montserrat', sans-serif;
+    --font-weight: 600;
+}
+
+
+/* REUSABLE CLASS */
+.pads {
+    padding: var(--py) var(--px) var(--py) var(--px);
+}
+
+.extraBold {
+    font-weight: 800;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Override */
+.headings {
+    margin-bottom: 0.4rem;
+}
+
+/* Override */
+.container {
+    width: 100%;
+}
+
+
+/* SPECIFIC THINGS */
+@media only screen and (min-width: 768px) {
+    #drpdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #non-drpdown {
+        display: none;
+    }
+}
+
+
+main {
+    background-color: #18232c;
+}
+
+h3 {
+    margin: 0px;
+}
+
+#about-me-big {
+    text-align: justify;
+}
+
+#profile {
+    width: 12rem;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+    #profile {
+        width: 15rem;
+        border-radius: 0px;
+        padding-bottom: 1.2rem;
+    }
+}
+
+.langIcon {
+    font-size: 3rem;
+    padding-right: 0.4rem;
+    gap: 1rem;
+}
+
+
+.project-link:hover {
+    text-decoration: none;
+}
+
+.project-card {
+    margin: 0px;
+    margin-top: 1rem;
+    filter: brightness(75%);
+}
+
+.project-card:hover {
+    background-color: hsl(195, 90%, 32%);
+    filter: brightness(100%);
+}
+
+.project-card:hover h5 {
+    color: white;
+}
+
+.project-card:hover h6 {
+    color: hsl(205, 18%, 86%);
+}
+
+
+.sosmed {
+    font-size: 1.4rem;
+}
